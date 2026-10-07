@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP02 PHP - Exercice 10 (Partie A - GET)</title>
+</head>
+<body>
+
+    <h2>Formulaire d'inscription (Méthode GET)</h2>
+
+    <form action="ex10_get.php" method="GET">
+        <p>
+            <label for="nom">Nom :</label><br>
+            <input type="text" id="nom" name="nom">
+        </p>
+        <p>
+            <label for="prenom">Prénom :</label><br>
+            <input type="text" id="prenom" name="prenom">
+        </p>
+        <p>
+            <label for="groupe">Groupe :</label><br>
+            <select id="groupe" name="groupe">
+                <option value="">-- Choisir un groupe --</option>
+                <option value="G1">G1</option>
+                <option value="G2">G2</option>
+                <option value="G3">G3</option>
+                <option value="G4">G4</option>
+            </select>
+        </p>
+        <p>
+            <button type="submit">Envoyer via GET</button>
+        </p>
+    </form>
+
+</body>
+</html>
