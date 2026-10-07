@@ -34,3 +34,17 @@ Selon les règles de syntaxe PHP :
 ### Différence d'affichage de `false` entre `echo` et `var_dump()`
 - **`echo`** convertit la valeur booléenne en chaîne de caractères avant de l'afficher. Ainsi, `true` est converti en la chaîne `"1"`, tandis que `false` est converti en une chaîne vide `""` (ce qui explique pourquoi rien n'apparaît à l'écran).
 - **`var_dump()`** est une fonction de débogage qui affiche la structure complète de la variable, y compris son type exact et sa valeur brute sans conversion automatique. Il affiche donc explicitement `bool(false)`.
+
+## Exercice 5 : Résultats des tests
+
+Voici le récapitulatif des valeurs testées et des messages obtenus lors de l'exécution du script `ex05.php` :
+
+| Valeur testée | Message obtenu | Explication |
+|---|---|---|
+| `-1` | Note invalide | Valeur stricte inférieure à 0 |
+| `9` | Non validé | Valeur valide, inférieure à 10 |
+| `10` | Passable | Valeur limite (10 inclus à 12 exclu) |
+| `12` | Assez bien | Valeur limite (12 inclus à 14 exclu) |
+| `14` | Bien | Valeur limite (14 inclus à 16 exclu) |
+| `16` | Très bien | Valeur limite (16 à 20 inclus) |
+| `21` | Note invalide | Valeur stricte supérieure à 20 |
