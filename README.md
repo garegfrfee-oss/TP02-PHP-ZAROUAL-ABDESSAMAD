@@ -14,3 +14,17 @@ Ce dépôt contient les solutions pour les 10 exercices du TP 02 PHP dans le cad
 - `ex01.php` à `ex09.php` : Exercices du TP.
 - `ex10_get.html` / `ex10_get.php` : Exercice 10 avec méthode GET.
 - `ex10_post.html` / `ex10_post.php` : Exercice 10 avec méthode POST.
+
+# TP02 - PHP Basics
+
+## Exercice 2 : Réponses explicatives
+
+### 1. Pourquoi `$note` et `$Note` sont différentes ?
+En PHP, les noms de variables sont **sensibles à la casse** (case-sensitive). Par conséquent, `$note` (avec un 'n' minuscule) et `$Note` (avec un 'N' majuscule) désignent deux emplacements mémoires distincts et contiennent des valeurs différentes (12 et 16).
+
+### 2. Identification des noms de variables valides
+Selon les règles de syntaxe PHP :
+- **Valides :** `$a`, `$_a`, `$a_a`, `$AAA`, `$a1` (commencent par une lettre ou un tiré bas `_` et ne contiennent que des caractères alphanumériques et `_`).
+- **Invalides :** 
+  - `$a!` : contient un caractère spécial interdit (`!`).
+  - `$1a` : commence par un chiffre juste après le symbole `$`, ce qui est interdit par la syntaxe PHP.
