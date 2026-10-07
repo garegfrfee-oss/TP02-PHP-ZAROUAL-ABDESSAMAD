@@ -28,3 +28,9 @@ Selon les règles de syntaxe PHP :
 - **Invalides :** 
   - `$a!` : contient un caractère spécial interdit (`!`).
   - `$1a` : commence par un chiffre juste après le symbole `$`, ce qui est interdit par la syntaxe PHP.
+
+  ## Exercice 4 : Réponses explicatives
+
+### Différence d'affichage de `false` entre `echo` et `var_dump()`
+- **`echo`** convertit la valeur booléenne en chaîne de caractères avant de l'afficher. Ainsi, `true` est converti en la chaîne `"1"`, tandis que `false` est converti en une chaîne vide `""` (ce qui explique pourquoi rien n'apparaît à l'écran).
+- **`var_dump()`** est une fonction de débogage qui affiche la structure complète de la variable, y compris son type exact et sa valeur brute sans conversion automatique. Il affiche donc explicitement `bool(false)`.
